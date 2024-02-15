@@ -1,0 +1,55 @@
+.navbar{
+    position: fixed;
+    width: 100%;
+    font-size: 14px;
+    z-index: 999;
+    background-color: #fff;
+    .container{
+        display: flex;
+        padding: 0px 50px;
+        height: 70px;
+        align-items: center;
+        justify-content: space-between;
+
+        .left{
+            display: flex;
+            align-items: center;
+            img{
+                height: 40px;
+                margin-right: 40px;
+            }
+            span{
+                color: gray;
+                cursor: pointer;
+
+                select{
+                    border: none;
+                    outline: none;
+                    font-size: 16px;
+                    font-weight: 600;
+                    color:#6c757d;
+                }
+                
+            }
+        }
+
+        .right{
+            display: flex;
+            align-items: center;
+
+            span{
+                margin-right: 20px;
+                font-weight: 600;
+            }
+            .phone{
+                border: 2px solid rgb(19, 153, 70);
+                padding: 5px;
+                border-radius: 5px;
+                color: rgb(19, 153, 70);
+            }
+        }
+
+
+        
+    }
+}

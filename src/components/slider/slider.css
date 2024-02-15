@@ -1,0 +1,13 @@
+.carousel-container{
+
+} 
+.react-multiple-carousel__arrow--left{
+    background-color: #01788e;
+    top:30%;
+    opacity: 0.7;
+}
+.react-multiple-carousel__arrow--right{
+    top:30%;
+    background-color: #01788e;
+    opacity: 0.7;
+}  
