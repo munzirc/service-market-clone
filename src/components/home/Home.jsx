@@ -1,7 +1,7 @@
 import SearchIcon from '@material-ui/icons/Search';
 import { Call, ChatBubble, Person, Star, VerifiedUser } from "@material-ui/icons";
 import styled from '@emotion/styled';
-import "./featured.scss";
+import "./home.scss";
 
 
 const SearchButton = styled(SearchIcon)`
