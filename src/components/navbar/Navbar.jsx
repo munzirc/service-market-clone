@@ -3,7 +3,6 @@ import "./navbar.scss";
 
 export default function Navbar() {
   return (
-    <div>
       <div className="navbar">
         <div className="container">
           <div className="left">
@@ -28,6 +27,5 @@ export default function Navbar() {
           </div>
         </div>
       </div>
-    </div>
   );
 }

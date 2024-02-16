@@ -26,6 +26,7 @@ const responsive = {
   });
 
   const Component = styled(Box)`
+     position: relative;
      padding: 50px 100px 0 100px;
   `;
 

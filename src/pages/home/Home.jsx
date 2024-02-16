@@ -17,7 +17,7 @@ export default function Home() {
         <Slider Services={Moving} title={'Moving & Storage'} />
         <ServiceWhy />
         <ServiceHow />
-        <Reviews /> <br/><br/>
+        <Reviews /> 
     </div>
   )
 }

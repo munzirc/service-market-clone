@@ -1,13 +1,15 @@
 .navbar{
     position: fixed;
+    top:0;
     width: 100%;
     font-size: 14px;
     z-index: 999;
     background-color: #fff;
+    height: 70px;
     .container{
         display: flex;
-        padding: 0px 50px;
-        height: 70px;
+        padding: 0px 100px;
+        height: 100%;
         align-items: center;
         justify-content: space-between;
 
