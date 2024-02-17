@@ -20,15 +20,21 @@ const FindContent = styled(Typography)`
 const ServicePage = ({servicedata, pagedetails}) => {
     
 
-    const {location, setSearchBar, index} = useContext(DataContext)
-    setSearchBar(true);
-
+    const {location, setSearchBar,setNavbarSearch,index} = useContext(DataContext)
+    
     const [pagedata, setPagedata] = useState(pagedetails[index]);
 
+    const search = pagedata.hero.search;
+
+    setSearchBar(search);
+
     useEffect(()=> {
+        setNavbarSearch(!search);
         setPagedata(pagedetails[index]);
-        console.log(index);
-    }, [index]);
+        return () =>{
+            setNavbarSearch(false);
+        }
+    }, [index,pagedetails]);
 
 
     const findtitle = pagedata.find.title.replaceAll('{place}',location);

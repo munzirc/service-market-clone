@@ -5,7 +5,7 @@ import {DataContext} from "../../context/DataProvider";
 
 export default function Navbar() {
 
-  const {searchBar} = useContext(DataContext);
+  const {searchBar, navbarsearch} = useContext(DataContext);
 
   return (
       <div className="navbar">
@@ -25,7 +25,7 @@ export default function Navbar() {
               {/* <ArrowDropDown/> */}
             </span>
           </div>
-          { !searchBar && <SearchBar />}
+          { navbarsearch && <SearchBar />}
           <div className="right">
             <span className="phone">+971 56 816 3494</span>
             <span>Login</span>

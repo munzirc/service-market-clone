@@ -9,15 +9,14 @@ import { DataContext } from "../../context/DataProvider";
 
 const Hero = ({herocontent}) =>{
 
-  const {location, setSearchBar, searchBar} = useContext(DataContext);
-  setSearchBar(herocontent.serach)
+  const {location, setSearchBar,setNavbarSearch, searchBar} = useContext(DataContext);
 
   const [title, setTitle] = useState('');
   const [subtitle, setSubtitle] = useState('');
   const [imageurl, setImageurl] = useState('');
 
   useEffect(()=>{
-    setTitle(()=>searchBar ? herocontent.title.replaceAll('{place}', location) : herocontent.title);
+    setTitle(()=> herocontent.search ? herocontent.title : herocontent.title.replaceAll('{place}', location) );
     setSubtitle(herocontent.subtitle.replaceAll('{place}', location));
     setImageurl(herocontent.backgroundimage);
   },[location, herocontent])

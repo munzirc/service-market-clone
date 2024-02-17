@@ -4,7 +4,8 @@ export const DataContext = createContext(null);
 
 const DataProvider = ({children}) => {
 
-    const [searchBar, setSearchBar] = useState(false);
+    const [searchBar, setSearchBar] = useState(true);
+    const [navbarsearch, setNavbarSearch] = useState(false);
     const [location, setLocation] = useState('Dubai');
     const [index, setIndex] = useState(0);
 
@@ -15,7 +16,10 @@ const DataProvider = ({children}) => {
             location,
             setLocation,
             index,
-            setIndex
+            setIndex,
+            navbarsearch,
+            setNavbarSearch
+
         }}>
             { children }
         </DataContext.Provider>
