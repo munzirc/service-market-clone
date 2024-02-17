@@ -1,7 +1,12 @@
-// import { ArrowDropDown } from "@material-ui/icons";
 import "./navbar.scss";
+import SearchBar from "../search/SearchBar";
+import { useContext, useEffect } from "react";
+import {DataContext} from "../../context/DataProvider";
 
 export default function Navbar() {
+
+  const {searchBar} = useContext(DataContext);
+
   return (
       <div className="navbar">
         <div className="container">
@@ -20,7 +25,7 @@ export default function Navbar() {
               {/* <ArrowDropDown/> */}
             </span>
           </div>
-
+          { searchBar && <SearchBar />}
           <div className="right">
             <span className="phone">+971 56 816 3494</span>
             <span>Login</span>

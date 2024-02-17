@@ -71,7 +71,7 @@ const Locations = () =>{
                     }
                 </ContentGrid>
                 <Box>
-                    <img width="232.500" height="153.637" src="https://servicemarket.imgix.net/dist/images/map.png" alt="" />
+                    <img width="300" height="170" src="https://servicemarket.imgix.net/dist/images/map.png" alt="" />
                 </Box>
             </Container>
         </Component>

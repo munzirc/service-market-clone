@@ -1,8 +1,11 @@
-import { Box, Link, Typography, styled } from "@mui/material";
+import { Box, Typography, styled } from "@mui/material";
+import { Link } from "react-router-dom";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import './slider.css';
 import Heading from "../headings/Heading";
+import { useContext } from "react";
+import { DataContext } from "../../context/DataProvider";
 
 const responsive = {
     desktop: {
@@ -23,6 +26,7 @@ const responsive = {
     width: '100%',
     height: '80%',
     borderRadius: 5,
+    objectFit: 'cover'
   });
 
   const Component = styled(Box)`
@@ -32,11 +36,23 @@ const responsive = {
 
   const Slide = styled(Box)`
      text-align: left;
-     width: 350px;
+     width: 370px;
      height: 230px;
   `;
 
+  const ImageLink = styled(Link)`
+     text-decoration: none;
+     cursor: pointer;
+     
+  `;
+
   const Slider = ({Services, title}) => {
+
+    const {location,setIndex} = useContext(DataContext);
+
+    const handleClick = (i) => {
+        setIndex(i);
+    } 
     
     return (
         <Component>
@@ -56,12 +72,12 @@ const responsive = {
                 containerClass="carousel-container"
                 >
                 {
-                    Services.map(service => (
-                        <Slide>
-                            <a href="#" style={{textDecoration:'none'}}>
+                    Services.map((service, index) => (
+                        <Slide onClick={()=>handleClick(index)}>
+                            <ImageLink to={service.link}>
                                 <Image src={service.image} alt= "product"/>
-                                <Typography style={{color:'black',fontSize: 18}}>{service.title}</Typography>
-                            </a>
+                                <Typography style={{color:'black',fontSize: 18}}>{service.title+location}</Typography>
+                            </ImageLink>
                         </Slide>
                     ))
                 }

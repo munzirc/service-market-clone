@@ -1,0 +1,37 @@
+.featured{
+    
+    .container{
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 155px 0;
+        text-align: center;
+        .heading1{
+            color:#fff;
+            font-size: 42px;
+            line-height: 0;
+        }
+        .heading2{
+            color:#fff;
+            font-size: 20px;
+            font-weight: 500;
+        }
+    }
+
+    .lowerContainer{
+        height:75.2px;
+        width: 100%;
+        background-color: #01788e;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .tags{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    }
+}
