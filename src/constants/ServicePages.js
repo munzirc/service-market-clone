@@ -69,20 +69,21 @@ export const cleaning = [
             If you are looking for specialized cleaning services from a professional cleaning company {place}, you can also book office cleaning, deep cleaning, sofa cleaning, mattress cleaning, carpet cleaning, laundry services,  pool cleaning, water tank cleaning, and window cleaning for villas.`
         }
     },
-    
+
 
 ]
 
-export const maintenance = {
-    hero:{
-        title:'Book a handyman {place} for AED 79 for any maintenance service',
-        subtitle:'',
-        backgroundimage:'url(https://sm-prod-content.imgix.net/wp-content/uploads/2018/11/handyman.jpg?fit=crop&fm=webp&w=1349&h=442&auto=format&q=46&exp=-7)',
-        serach: false,
+export const maintenance = [
+    {
+        hero:{
+            title:'Book a handyman {place} for AED 79 for any maintenance service',
+            subtitle:'',
+            backgroundimage:'url(https://sm-prod-content.imgix.net/wp-content/uploads/2018/11/handyman.jpg?fit=crop&fm=webp&w=1349&h=442&auto=format&q=46&exp=-7)',
+            serach: false,
+        },
+        find:{
+            title:'Hire a Handyman in {place}' ,
+            content:'If you are looking for a handyman in {place}, ServiceMarket is the perfect place. ServiceMarket brings you the best handymen in {place} on one platform for all your home maintenance needs. All handymen on ServiceMarket are experienced and licensed to performany fixes around the house. All you have to do is fill out a short form with all the details of the work that needs to be done and book away! A handyman from a professional maintenance company in {place} will be at your doorstep at your preferred time and date.At ServiceMarket you can also hire licensed electricians, carpenters, locksmiths, painters,and plumbers, all available 7 days a week.'
+        },
     },
-    find:{
-        title:'Hire a Handyman in {place}' ,
-        content:'If you are looking for a handyman in {place}, ServiceMarket is the perfect place. ServiceMarket brings you the best handymen in {place} on one platform for all your home maintenance needs. All handymen on ServiceMarket are experienced and licensed to performany fixes around the house. All you have to do is fill out a short form with all the details of the work that needs to be done and book away! A handyman from a professional maintenance company in {place} will be at your doorstep at your preferred time and date.At ServiceMarket you can also hire licensed electricians, carpenters, locksmiths, painters,and plumbers, all available 7 days a week.'
-    },
-
-}
+]
