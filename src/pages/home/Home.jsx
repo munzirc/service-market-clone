@@ -12,13 +12,14 @@ import FooterNavigation from "../../components/footer/FooterNavigation"
 import Footer from "../../components/footer/Footer"
 import { Box } from "@mui/material"
 import {homehero} from '../../../src/constants/HeroConstants.js'
+import PopularSlide from "../../components/slider/PopularSlide.jsx"
 
 
 export default function Home() {
   return (
     <Box>
         <Hero herocontent={homehero}/>
-        <Slider Services={Popular} title={'Most Popular Services in Dubai'} />
+        <PopularSlide Services={Popular} title={'Most Popular Services in Dubai'} />
         <Slider Services={Moving} title={'Moving & Storage'} />
         <Slider Services={Cleaning} title={'Cleaning Services '} />
         <Slider Services={Maintenance} title={'Maintenance & Handyman'} />

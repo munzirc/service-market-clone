@@ -17,9 +17,10 @@ function App() {
         <Box style={{marginTop: 70}}>
           <Routes>
             <Route path='/' element={<Home/>}/>
-            <Route path='/local-movers' element={<ServicePage servicedata={Moving} pagedetails={local_mover}/>}/>
+            <Route path='/moversandstorage' element={<ServicePage servicedata={Moving} pagedetails={local_mover}/>}/>
             <Route path='/cleaners' element={<ServicePage servicedata={Cleaning} pagedetails={cleaning}/>}/>
             <Route path='/maintenance' element={<ServicePage servicedata={Maintenance} pagedetails={maintenance}/>}/>
+            <Route path='/salons' element={<ServicePage servicedata={Salon} pagedetails={maintenance}/>}/>
           </Routes>
         </Box>
       </BrowserRouter>
