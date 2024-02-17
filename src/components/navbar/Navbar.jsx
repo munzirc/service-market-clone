@@ -25,7 +25,7 @@ export default function Navbar() {
               {/* <ArrowDropDown/> */}
             </span>
           </div>
-          { searchBar && <SearchBar />}
+          { !searchBar && <SearchBar />}
           <div className="right">
             <span className="phone">+971 56 816 3494</span>
             <span>Login</span>

@@ -9,8 +9,9 @@ import { DataContext } from "../../context/DataProvider";
 
 const Hero = ({herocontent}) =>{
 
-  const {location, setLocation, searchBar} = useContext(DataContext);
-  
+  const {location, setSearchBar, searchBar} = useContext(DataContext);
+  setSearchBar(herocontent.serach)
+
   const [title, setTitle] = useState('');
   const [subtitle, setSubtitle] = useState('');
   const [imageurl, setImageurl] = useState('');

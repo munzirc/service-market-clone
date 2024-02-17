@@ -86,4 +86,5 @@ export const maintenance = [
             content:'If you are looking for a handyman in {place}, ServiceMarket is the perfect place. ServiceMarket brings you the best handymen in {place} on one platform for all your home maintenance needs. All handymen on ServiceMarket are experienced and licensed to performany fixes around the house. All you have to do is fill out a short form with all the details of the work that needs to be done and book away! A handyman from a professional maintenance company in {place} will be at your doorstep at your preferred time and date.At ServiceMarket you can also hire licensed electricians, carpenters, locksmiths, painters,and plumbers, all available 7 days a week.'
         },
     },
+    
 ]
